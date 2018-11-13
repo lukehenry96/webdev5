@@ -52,7 +52,7 @@
         const esriStreets = L.esri.basemapLayer('Gray').addTo(map);
 
         // add hosted feature layer
-        const earthquakesLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/NaturalDisasters_Earthquakes/FeatureServer/0'}).addTo(map);
+        const earthquakesLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/MInnesota_Land_Application_Sites/FeatureServer/0?token=v7wJm1qAPEXUOAO0sUaug4b7S9pxzkZgCijvrjQCEQRcPFg78uOUvUNlxsuVCY6R3I2LG3_KfQvSygGHRaZZiLvQHG29EF_TVx8GNcXmgv9nCNDgW7HU_XZ0qhmVg319UFz21kGqa9e5oZRvw6AkpgsQRRNSYWnlKxNcbIf6hR9upQNf8Na5D7mS3ZWfkBnm3TuFDVOg3khbuUoLOrYQI9ErDQYD6b4U8fz_i7A6CFhtSPr6WOZG5pT53UM8iBUa'}).addTo(map);
 
         // set up popup for earthquakes layer
         earthquakesLayer.bindPopup(function(evt) {
